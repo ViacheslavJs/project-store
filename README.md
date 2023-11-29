@@ -47,7 +47,7 @@ client launch:
 
   ~/project-store/client$ `npm start`
  
-The project will open in a browser tab at [http://localhost:3000/project-store](http://localhost:3000/project-store)
+The project will open in a browser tab at [http://localhost:3000/store-client](http://localhost:3000/store-client)
  
 ### Deployment
  [is being developed]
