@@ -51,6 +51,7 @@ The project will open in a browser tab at [http://localhost:3000/project-store](
  
 ### Deployment
 
+<!--
 To deploy this application on **GitHub Pages**, follow the instructions at the link:
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
@@ -62,7 +63,7 @@ Remember to change the URL in the `package.json` file to match your GitHub Pages
  *package.json*:
  
  `"homepage": "https://yourwebsite.github.io/store-client/"`
-
+-->
  
  
  
