@@ -25,7 +25,7 @@ Work on the project continues.
 
  - go to the `project-store/server` directory:
 
- $ `project-store/server`
+ $ `cd project-store/server`
 
  - installing packages:
  
@@ -33,7 +33,7 @@ Work on the project continues.
 
 - go to the `project-store/client` directory:
 
- $ `project-store/client`
+ $ `cd project-store/client`
 
  - installing packages:
  
@@ -41,7 +41,7 @@ Work on the project continues.
 
  - starting the server:
 
- ~/project-store/server$ `npm start`
+ ~/project-store/server$ `npm run dev`
 
  - client launch:
 
