@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/fontawesome/all-custom.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <title>Admin panel</title>
+</head>
+<body>
+  
+  <h1>Admin panel</h1>
+  <h2>List of products:</h2>
+  <table>    
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Text</th>
+        <th>Alt</th>
+        <th>Image path</th>        
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- Сюда будут добавляться данные с сервера -->
+    </tbody>
+  </table>
+    
+  <form id="addPlayerForm" class="form">
+  <h3>Create a new product:</h3>
+  <div class="form__item">   
+    <label for="id" class="form__label">ID:</label>
+    <input class="form__input" type="number" id="id" placeholder="ID">
+  </div>
+    
+  <div class="form__item">     
+    <label for="name" class="form__label">Name:</label>
+    <input class="form__input" type="text" id="name" placeholder="Name">
+  </div>  
+    
+  <div class="form__item">     
+    <label for="price" class="form__label">Price:</label>
+    <input class="form__input" type="number" id="price" placeholder="Price">
+  </div>  
+    
+  <div class="form__item">     
+    <label for="text" class="form__label">Text:</label>
+    <input class="form__input" type="text" id="text" placeholder="Text">
+  </div>  
+    
+  <div class="form__item">     
+    <label for="alt" class="form__label">Alt:</label>
+    <input class="form__input" type="text" id="alt" placeholder="Alt">
+  </div>  
+    
+  <div class="form__item">     
+    <label for="imagePath" class="form__label">Image path:</label>
+    <input class="form__input" type="text" id="imagePath" placeholder="Path">
+  </div>  
+    
+    <button class="button-create" type="submit">Create</button>
+    
+  </form>
+    
+  <script src="/javascripts/requests.js"></script>
+  
+</body>
+</html>
+

@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #46494D;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
+
+th {
+  background-color: #ffffff;
+  color: #babbbc;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;          
+  align-items: center;                  
+  max-width: 360px;                               
+  /*margin: 0 auto; /* for center */
+  margin: 0;
+  
+}
+
+@media screen and (max-width: 720px) {
+  .form {   
+    max-width: 100%;  
+    align-items: center;    
+  }
+}
+
+.form__input {
+  width: 100%;
+  height: 45px;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px dotted gray;
+  border-radius: 0px;	 
+  font-size: 18px;
+  transition: all 0.2s ease 0s;
+  background: #ffffff;
+  color: gray; 
+}
+
+.form__input:focus {
+  border-bottom: 1px solid gray;
+}
+
+.form__item {
+  position: relative;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.form__label {
+  display: block;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  color: #46494D;
+}
+
+.form__input[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  display: block;
+  color: silver;
+}
+
+.form__input {
+  min-width: 18px; /* TODO - добавил что-бы инпут не сжимался */
+  -moz-appearance: textfield; /* TODO - убирает стрелочки "вверх-вниз" в инпуте */
+}
+
+.form__input::placeholder {
+  color: gray;
+}
+
+.button-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 100%; 
+  margin-top: 20px;
+  padding: 8px; 
+  font-size: 1.1rem; 
+  font-weight: 700;
+  /*text-transform: uppercase;*/
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 10px;
+  background-color: #29b350;
+  color: #ffffff; 
+  cursor: pointer;	
+  outline: 0; 
+  /*box-shadow: 0 5px 0 #161b13;*/
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);     
+  transition: background-color 0.2s ease 0s;*/
+}
+
+.button-create:hover {
+  transition: 0.2s;
+  background-color: #1f883d;
+}
+
+.button-create:active {	 
+  background-color: #29b350;
+}
+
+.select {
+  background-color: #ffffff;
+  border: 1px solid #1da1f2;	
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 20px;
+  color: #46494D;
+}
+
+.form__item--birthday {
+  display: flex;
+  flex-direction: row;   
+  justify-content: center;          
+  align-items: center; 
+  width: 100%;
+}
+
+.form__label--birthday {
+  padding-right: 10px;
+}
+
+.banned {
+  display: flex;
+  flex-direction: row;   
+  justify-content: space-between;          
+  align-items: center;
+  width: 100%;
+}
+
+.banned-span {
+  color: #46494D;
+}
+
+.cell-delete {
+  text-align: center;        
+}
+
+.button-delete {
+  padding: 5px;
+  border: none;
+  background: transparent;
+}
+
+.button-delete:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s; 
+}
+
+.font-awesome-icon.fas.fa-trash-alt { 
+  /*position: absolute;*/
+  font-size: 20px; 
+  color: #55b6f2; 
+}
+

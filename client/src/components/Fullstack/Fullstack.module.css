@@ -1,0 +1,169 @@
+/*** close icon ***/
+
+.icon-close {
+  display: inline-block;
+  position: absolute;	
+  top: calc(-50px );
+  right: calc(0px);	
+  font-size: 37px;	
+  color: gray;
+  z-index: 3;
+  transition: 0.2s;      
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+}
+	  
+.icon-close:hover,
+.icon-close:focus {         
+  text-decoration: none;
+  cursor: pointer;
+  color: silver; 	  
+}
+
+	  
+@media screen and (orientation: landscape) {
+  /* TODO - for inscription Close */
+  /*
+  .icon-close::before {
+  
+    content: "Close";
+    position: absolute; 
+    font-size: 1rem;
+    font-weight: bold;
+    top: calc(-5px);
+    right: calc(37px);
+     
+  }*/
+ 
+  /* TODO - for the "cross in a square" icon (or class="fas fa-window-close") */
+  /*
+  .icon-close::before {
+  
+    content: "\f410";
+    position: absolute; 
+    font-size: 37px;
+    /*font-weight: bold; /* add for fat
+    top: calc(-20px);
+    right: calc(37px);
+     
+  }
+  */
+  
+  /* TODO - for the "cross" icon */
+  /*
+  .icon-close::before {
+  
+    content: "\f00d";
+    position: absolute; 
+    font-size: 37px;
+    font-weight: bold; /* does not work without bold 
+    top: calc(-10px);
+    right: calc(-37px);
+     
+  }
+  */
+  
+  /* TODO - for &times; between tags */
+  /*
+  .icon-close {
+    
+    position: absolute; 
+    font-size: 37px;    
+    top: calc(-10px);
+    right: calc(-40px);
+     
+  }
+  */
+    
+  .icon-close {   
+    content: "\f057";
+    position: absolute;
+    top: calc(0px);
+    right: calc(-50px);
+    font-size: 37px;
+    /*font-weight: bold;*/    
+     
+  }
+
+}	
+
+.cart {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.cartIcon {
+  font-size: 24px;               
+  cursor: pointer;
+}
+
+.totalItems {
+  color: red;
+}
+
+.cardProduct {
+  padding: 10px;
+}
+
+.cardFlexBox {
+  display: flex;
+  flex-direction: column;		 
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  
+}
+
+.cardPreview {
+  position: relative;
+  display: block;  
+  width: 200px; 
+  height: 200px; 
+  margin: 20px 0;
+  object-fit: cover;                
+    
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cardPreviewBox {
+  position: relative;   
+}
+
+.cardPreviewSpan {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 8px;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.cardPreview:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.addCart {
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #ffb328; /* none */
+  border-radius: 5px;
+  background: transparent;
+  padding: 3px 5px; /* 0 */
+  cursor: pointer;
+  color: #ffb328;
+}
+
+.viewed {
+  margin: 20px;
+}
+
+.scroll {
+  overflow-y: hidden;
+}
+
