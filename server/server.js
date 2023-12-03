@@ -326,8 +326,8 @@ const databaseConfig = {
   user: 'postgres',
   password: 'postgres',
   //database: 'online_store',
-  database: 'my_store',
-  //database: 'my_store_test',
+  //database: 'my_store',
+  database: 'my_store_test',
 };
 
 const pool = new Pool(databaseConfig);
@@ -351,11 +351,14 @@ app.get('/api/furniture', async (req, res) => {
   try {
     const typesQuery = 'SELECT * FROM furniture';
     const typesData = await queryDB(typesQuery);
-
+    console.log('\x1b[1;44mDB: connected\x1b[0m'); // если PostgreSQL запущен
     res.json(typesData);
-  } catch (error) {
+  } catch (error) { 
     console.error('Ошибка при выполнении запроса к базе данных:', error);
     res.status(500).json({ error: 'Внутренняя ошибка сервера' });
+    console.log('\x1b[1;43;97mDB: disconnected\x1b[0m'); // если PostgreSQL остановлен
+    //console.log('\x1b[1;43;5;97mDB: disconnected\x1b[0m'); // если PostgreSQL остановлен
+    //console.log('\x1b[1;5;89;97mDB: disconnected\x1b[0m'); // если PostgreSQL остановлен
   }
 });
 //

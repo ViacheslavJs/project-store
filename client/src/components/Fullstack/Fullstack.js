@@ -189,7 +189,7 @@ function Fullstack() {
   return (
     <div>              
       <section className={styles.cardProduct}>     
-        <h2>Furniture store</h2>
+        <h1>Furniture store</h1>
         <div className={styles.cart}>         
           <FontAwesomeIcon icon={faCartShopping} style={ {color: initialColor} } className={styles.cartIcon} onClick={cartClick} />
           <>
